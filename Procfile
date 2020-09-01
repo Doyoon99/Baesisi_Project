@@ -1,1 +1,1 @@
-web: gunicorn mysite.wsgi --log-file -
+web: gunicorn Baesisi_Poetry.wsgi --log-file -
