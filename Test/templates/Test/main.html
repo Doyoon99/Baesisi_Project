@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>배시시_시집추천_메인화면</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+</head>
+
+<body class="d-flex flex-column h-100">
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a class="navbar-brand" href="{% url 'Test:main' %}"><img src="/static/img/logo.png" width="300wv"
+                                                                      height="120hv"></a>
+        </div>
+    </nav>
+</header>
+
+<main role="main" class="flex">
+    <div class="container">
+        <div class="tester_name">
+            <br>
+            <h3>나와 어울리는 시집 찾기</h3>
+            <br>
+            <h6>"당신과 어울리는 시집을 추천해드릴게요."</h6>
+            <img src="/static/img/main.jpg" height="250hv" width="280wv"/>
+            <br>
+            <h5>당신의 이름은?</h5>
+            <form action="" method="GET">
+                {% csrf_token %}
+                <input type="text" class="your_name" name="tester_name" placeholder="이름을 입력하세요.">
+                <br>
+                <br>
+                <input type="submit" class="name_btn" value="테스트 시작하기">
+            </form>
+        </div>
+         <br>
+            <br>
+            <br>
+    </div>
+</main>
+
+<footer class="footer py-5">
+    <div class="container">
+          <a href="https://www.instagram.com/bae._.si_si_/" target="_blank"><span class="text-muted">ⓒ 2020. Baesisi All Rights Reserved.</span></a>
+    </div>
+</footer>
+
+</body>
+
+</html>

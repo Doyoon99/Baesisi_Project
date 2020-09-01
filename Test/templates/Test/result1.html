@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>결과화면1</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/re01.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+          crossorigin="anonymous">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+</head>
+
+<body class="d-flex flex-column h-100">
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a class="navbar-brand" href="{% url 'Test:main' %}"><img src="/static/img/logo.png" width="300wv"
+                                                                      height="120hv"></a>
+        </div>
+    </nav>
+</header>
+
+<main role="main" class="flex">
+    <div class="container">
+        <div>
+            <br>
+            <h4><strong>{{ tester.name }}</strong>님에게 어울리는 시집은<br><br> <strong>{{ book.poet }}</strong> 시인의 <strong><{{ book.name }}></strong> 입니다.</h4>
+        </div>
+        <div class="detail">
+            <br>
+            <p class="con1" style="font-size: medium;"><strong>#{{ book.keyword }}</strong></p><br>
+            <p class="con2"><i class="fas fa-quote-left"></i>&nbsp;&nbsp;&nbsp;{{ book.content }}&nbsp;&nbsp;&nbsp;<i class="fas fa-quote-right"></i></p><br>
+            <p><img src="{{ book.img }}" width="250wv" height="400vh"></p><br><br>
+            <p style="font-size: medium">{{ book.result| linebreaksbr }}</p>
+        </div>
+
+
+        <br><br><Br>
+
+        <a href="{% url 'Test:re02' tester.id %}" class="atag">
+            <button class="re_btn">시 더보기</button>
+        </a>
+        <br> <br>
+        <a href="{{ book.Plink }}" target="_blank" class="atag">
+            <button class="re_btn">구매하러 가기</button>
+        </a>
+        <br> <br>
+        <button class="re_btn">공유하기</button>
+        <br><br><br>
+    </div>
+</main>
+
+
+<footer class="footer py-5">
+    <div class="container">
+          <a href="https://www.instagram.com/bae._.si_si_/" target="_blank"><span class="text-muted">ⓒ 2020. Baesisi All Rights Reserved.</span></a>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
