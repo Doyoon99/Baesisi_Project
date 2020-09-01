@@ -1,0 +1,156 @@
+
+
+ * {
+    font-family: 'Noto Serif KR', serif;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 2.5rem;
+    }
+}
+
+
+.navbar {
+    background-color: #6a2045;
+}
+
+.logo {
+    display: block;
+    flex: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%;
+}
+
+main {
+    background-color: #6a2045
+}
+
+main > .container {
+    background-color: #faf9dd;
+    display: block;
+    flex: auto;
+    justify-content: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-left: #6a2045 solid 30px;
+    border-right: #6a2045 solid 30px;
+    font-family: 'Noto Serif KR', serif;
+}
+
+
+.footer {
+    background-color: #6a2045;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+
+.text-muted {
+    float: right;
+}
+
+
+/* 여기부터는 내용*/
+.bar {
+    margin-left: 19%;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content {
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+    text-align: center;
+    font-family: 'Noto Serif KR', serif;
+    transform: rotate(-0.001deg);
+}
+
+.ref {
+    font-size: 15px;
+    text-align: center;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    transform: rotate(-0.001deg);
+}
+
+.answer_button {
+    word-break: break-all;
+    position: relative;
+    transform: rotate(-0.001deg);
+}
+
+.answer {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    word-wrap: break-word;
+    background-color: #faf9dd;
+    border: none;
+    transform: rotate(-0.001deg);
+}
+
+.answer:hover {
+    background-color: wheat;
+    border: wheat 5px;
+    transform: rotate(-0.001deg);
+}

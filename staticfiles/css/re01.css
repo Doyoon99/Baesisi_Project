@@ -1,0 +1,151 @@
+
+
+ * {
+    font-family: 'Noto Serif KR', serif;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+
+.navbar {
+    background-color: #6a2045;
+}
+
+.logo {
+    display: block;
+    flex: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%;
+}
+
+main {
+    background-color: #6a2045;
+}
+
+main > .container {
+    background-color: #faf9dd;
+    display: block;
+    flex: auto;
+    justify-content: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    border: #6a2045 solid 30px;
+    font-family: 'Noto Serif KR', serif;
+}
+
+
+.footer {
+    background-color: #6a2045;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+
+.text-muted {
+    float: right;
+}
+
+/*-------------*/
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container > h2 {
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+
+.go{
+    background-color: wheat;
+    border: none;
+    font-size: 25px;
+}
+
+.detail {
+   font-size: larger;
+}
+
+.con1, .con2{
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+    transform: rotate(-0.001deg);
+}
+
+.con1{
+    font-size: smaller;
+}
+
+.re_btn{
+     background-color: wheat;
+    border: none;
+    font-size: 17px;
+    margin-left: 5%;
+}
+
+.atag:hover{
+    text-decoration: none;
+}
+
+.btn_{
+    background-color: wheat;
+    border: none;
+    font-size: 17px;
+}
